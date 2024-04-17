@@ -1,0 +1,17 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="1" rowHeight="350px">
+    <mat-grid-tile>
+      <app-blog-card [title]="'Hosted and Immediate Plans'" [postDate]="'2024-04-15'" [tags]="['HobbyProjects', 'AngularJS', 'HomePage', 'TechResume']">
+        <p class="blog-para">The time span between the last post and this one is how long it took me to get from coding this simple Angular app to finding a hosting service I was happy with. I tried Google Cloud first, but when I found myself staring down the barrel of a $200 bill after trying to follow a few tutorials I decided that might not be the way to go. I tried Cloudbees briefly, and I think if I ever find myself in need of serious CI/CD I'll come back to that, but it was too involved for my very simple needs. The hosting service I ended up using, fly.io, is more to my speed. I do a lot of my local development in Docker containers, so a hosting service that uses dockerfiles to define the production deployment makes the transition from dev to prod very straightforward.</p>
+        <p class="blog-para">So that's the site up and running, but I can't very well call it quits there. The most immediate problem is fixes to the interactive resume. Since it was my first time building an AngularJS project from the ground up I had chosen to use native Angular as much as possible, as compared to this home page, which uses Angular's material-ui library. That's why this looks so much nicer, and why if you try to pull up the interactive resume on your phone you'll get a completely un-scaled, un-optimized travesty, whereas this home page is even smart enough to hide certain elements on a small screen. For that reason the next code update is going to be a re-do of the interactive resume's UI component from the ground up with material-ui to allow scaling for mobile and a more consistent look with this home page.</p>
+      </app-blog-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-blog-card [title]="'Initial creation'" [postDate]="'2024-03-10'" [tags]="['HobbyProjects', 'AngularJS', 'HomePage', 'TechResume']">
+        <p class="blog-para">This post marks the initial creation of this site.</p>
+        <p class="blog-para">The two portions I believed necessary to make this work, at least as a minimum viable project were this home page and the interactive resume. The interactive resume was the more complicated, of course, and was my largest exposure to AngularJS. The UI was developed using base Angular, unlike this home page which uses Material-UI, and was developed without any consideration for any browser other than desktop.</p>
+      </app-blog-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
