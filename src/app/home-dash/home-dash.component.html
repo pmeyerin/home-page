@@ -1,6 +1,13 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
+  <h1 class="mat-h1">Blog</h1>
   <mat-grid-list cols="1" rowHeight="350px">
+    <mat-grid-tile>
+      <app-blog-card [title]="'Better at Angular, but still not great'" [postDate]="'2024-04-27'" [tags]="['TechResume', 'AngularJS', 'HobbyProjects']">
+        <p class="blog-para">The update to the browser client is done, and looks prettier but is almost entirely functionally unchanged. I removed the chronological view of the work history section because it was not sufficiently distinct from the categorical view. I have some ideas for bringing it back, but that's a much heavier lift than I wanted to include in this update. The same general sections exist, but they're all collapsible. I have added a loading spinner.</p>
+        <p class="blog-para">The loading spinner is to cover for hosting. I'm not expecting a lot of traffic to this site, so the goal is to not keep the machines running full time. I'm just too cheap to have everything load immediately, and I'm sorry for that. I <i>have</i> added a minimum of one machine always on for the angular projects, so at least the loading spinner should load up almost immediately.</p>
+        <p class="blog-para">I'm not entirely satisfied with some of the changes I've made from a technical perspective. I'm worried I've developed something of a cargo cult mentality with respect to the Angular-Material themes, for example. The theme file I'm using comes from a <a href="https://materialtheme.arcsine.dev/">theme generator</a>, and I don't think I could make it myself. Ideally I should be able to swap the theme file out with another one and I would just get different fonts and colors, all across the file, but I haven't tested this and I'm not confident it would work. That said, I'm not beating myself up over this too much since AngularJS mastery isn't really the skill I'm looking to demonstrate with this portfolio</p>
+      </app-blog-card>
+    </mat-grid-tile>
     <mat-grid-tile>
       <app-blog-card [title]="'In defense of the abacus'" [postDate]="'2024-04-25'" [tags]="['HomePage', 'Abacus']">
         <p class="blog-para">While working on the update to the interactive resume I showed it to my roommate. I was hoping for some input on the appearance, because I don't have a lot of confidence in my ability to make a UI pleasing to the eye. It was her first time seeing the website at all, probably the first time anyone but me had looked at it, in fact. She laughed at it, at the idea that my developer portfolio would contain a blog section, and at the logo, the curly-brace abacus.</p>
