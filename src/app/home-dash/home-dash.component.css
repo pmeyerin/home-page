@@ -11,3 +11,11 @@
 .blog-para {
   text-indent: 25px;
 }
+
+code {
+  font-family: Consolas,"courier new";
+  color: lawngreen;
+  background-color: #6b6b6b;
+  padding: 1px;
+  font-size: 95%;
+}
