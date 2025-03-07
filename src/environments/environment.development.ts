@@ -3,5 +3,5 @@ export const environment = {
   siteLinks: {
     'interactiveResume': '/tech-resume',
     'techResume': '/tech-resume',
-    'tradResume': '/assets/resume.docx',
+    'tradResume': '/assets/resume.pdf',
   }};

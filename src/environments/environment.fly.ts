@@ -3,6 +3,6 @@ export const environment = {
   siteLinks: {
     'interactiveResume': 'https://tech-resume.citizenabacus.com/',
     'techResume': 'https://tech-resume.citizenabacus.com/',
-    'tradResume': '/assets/resume.docx',
+    'tradResume': '/assets/resume.pdf',
   }
 };
