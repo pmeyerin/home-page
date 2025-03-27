@@ -1,6 +1,15 @@
 <div class="grid-container">
   <h1 class="mat-h1">Blog</h1>
   <mat-grid-list cols="1" rowHeight="350px">
+    <mat-grid-tile [rowspan]="2">
+      <app-blog-card [title]="'I love it when a plan comes together'" [postDate]="'2025-03-27'" [tags]="['HobbyProjects','protocol-sn']">
+        <p class="blog-para">Up until this point the work on the protocolized social network has been mostly me marking a task as "done" because I had seen a desired HTTP status code or JSON response. In many cases it's as technical as getting an alive response from a dockerized container. Today I plugged a new page from the blog plugin's UI into the home page (what you're reading right now) via a good old fashioned iFrame tag and saw this.</p>
+        <img ngSrc="assets/NewHomePage.png" alt="Citizen Abacus home page with dummy data blog posts" height="306"
+             width="414"/>
+        <p class="blog-para">Sure, it's all dummy data. It doesn't have any formatting because I haven't implemented that part yet. I was able to write those up in a text area, though. I could log in, click "write a blog post", and have what I wrote transmitted to a service to be saved and showed back to me. It's more-or-less what an end user would see, and that's gratifying to finally have.</p>
+        <p class="blog-para">Not that there isn't quite a bit to do yet on that front. The infrastructure to make this work is three web services, a Keycloak instance, and a new Angular UI. There's some code changes I want to make around the APIs for those web services, distinguishing endpoints that will be exposed to clients and endpoints intended for internal use. The real lift is going to be figuring out how to set up a reverse proxy, something that is a bit outside of my ken, to obfuscate those internal endpoints, as well as the Keycloak admin API. My current plan is for those two tasks to make up the entirety of 0.5.</p>
+      </app-blog-card>
+    </mat-grid-tile>
     <mat-grid-tile>
       <app-blog-card [title]="'The next step'" [postDate]="'2025-03-19'" [tags]="['HobbyProjects','Mental Health']">
         <p class="blog-para">This is going to be the first time I focus one of these blog entries on something non-technical here. I started therapy a few weeks ago! I don't think I really needed it, at least not to the extent of many of the people who don't have access to it, but it's still been a pretty positive experience. I got the goals for ProtocolSN 0.3 done over the last few weeks and I think it's been my most productive month on these hobby projects.</p>

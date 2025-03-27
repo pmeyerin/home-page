@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { ProjectLinkComponent } from './project-link/project-link.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -26,22 +27,23 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     ProjectLinkComponent,
     BlogCardComponent
   ],
-  imports: [
-    MatSlideToggleModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    MatCardModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatMenuModule,
-  ],
+    imports: [
+        MatSlideToggleModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatGridListModule,
+        MatCardModule,
+        MatMenuModule,
+        MatIconModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        MatButtonModule,
+        MatMenuModule,
+        NgOptimizedImage,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
